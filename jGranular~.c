@@ -43,11 +43,11 @@ typedef struct {
 	long numberOfLayers;
 	long maxNumberOfLayers;
 	double gain;
-	double[] windowBuf;
+	
     t_symbol *sampleSym; // symbol for wave buffer name
     t_buffer *sampleBuf; // the wavebuffer (t_buffer defined in buffer.h)
-    //t_symbol *windowSym; // symbol for the window buffer name
-    //t_buffer *windowBuf; // symbol for the window buffer
+    t_symbol *windowSym; // symbol for the window buffer name
+    t_buffer *windowBuf; // symbol for the window buffer
 } t_jGranular;
 t_class *myClass;			// global variable to contain class
 t_symbol *psBuffer;    // to contain symbol buffer~ to make sure buffer named sent to the object is a buffer~
